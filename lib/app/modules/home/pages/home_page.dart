@@ -53,7 +53,7 @@ class HomePage extends GetView<HomePageController> {
       leading: SvgPicture.asset(
         'assets/icons/svg/drawer.svg',
       ),
-      title: const Text("Draggable Home"),
+      title: const Text("Welcome"),
 
       headerWidget: headerWidget(context),
       headerExpandedHeight: 0.3,
@@ -212,7 +212,7 @@ class HomePage extends GetView<HomePageController> {
                                 index++)
                               Container(
                                 height: Get.height * 0.15,
-                                width: Get.width * 0.445,
+                                width: Get.width * 0.44,
                                 margin:
                                     const EdgeInsets.symmetric(horizontal: 4),
                                 decoration: BoxDecoration(
@@ -249,7 +249,7 @@ class HomePage extends GetView<HomePageController> {
                         ),
                         12.verticalSpace,
                         SizedBox(
-                          height: Get.height * 0.12,
+                          height: Get.height * 0.2,
                           child: PageView.builder(
                             itemCount: controller.testimonialModel.data!.length,
                             itemBuilder: (context, index) {
